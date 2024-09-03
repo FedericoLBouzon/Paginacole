@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kiosco</title>
+</head>
+<body>
+    <div id="productos">
+        <h1 id="titulo">Productos del Kiosco desde una API</h1>
+        
+        <!-- Contenedor del selector de productos -->
+        <div class="label-container">
+            <label for="productoSelect">Elija un producto por ID:</label>
+            <select id="productoSelect">
+                <option value="todos">Todos los productos</option>
+                <!-- Aquí se insertarán las opciones del select -->
+            </select>
+        </div>
+
+        <!-- Tabla de productos -->
+        <table id="tablaProductos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se insertarán los productos -->
+            </tbody>
+        </table>
+
+        <!-- Botón para volver a la página principal -->
+        <div class="volver-container">
+            <button class="volver-boton">
+                <a href="/">VOLVER</a>
+            </button>
+        </div>
+    </div>
+
+    <script src="kiosco.js"></script>
+</body>
+</html>
